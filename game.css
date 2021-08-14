@@ -1,0 +1,222 @@
+
+body{
+   
+    background:linear-gradient(to right,rgb(0, 255, 34),rgb(1, 238, 255));
+    background-size: cover;
+}
+.questionbox{
+    position:absolute;
+    margin:5% auto;
+    left: 0;
+    top: 15%;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    border: 6px solid white;
+    background: transparent;
+    border-radius: 20px;
+   
+    height: 50%;
+}
+.divquestion{
+    position: absolute;
+    display: flex;
+    margin: 5% auto;
+    left:0;right:0;top: 0;bottom: 0;
+   min-height: 40px;
+   max-height:90px ;
+    min-width: 30%;
+    max-width: 60%;
+    border-radius: 10px;
+   background: transparent;
+   border: solid rgba(201, 44, 44, 0.596);
+}
+.divquestion h2{
+    padding: 10px;
+    margin: auto;
+    left: 0;
+    font-size: 20px;
+    color: chocolate;
+    padding-top: 5px;
+}
+.A{
+    position: absolute;
+    top: 40%;
+    height: 50px;
+    outline: none;
+    display: flex;
+  width: 150px;
+    left: 17%;
+    border: solid rgb(79, 34, 238);;
+    background: transparent;
+    border-radius: 20px;
+
+}
+.B{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    left: 62%;
+    width: 150px;
+    height: 50px;
+   outline: none;
+    border: solid rgb(79, 34, 238);;
+    background: transparent;
+    border-radius: 20px;
+}
+.C{
+    position: absolute;
+    top: 70%;
+    outline: none;
+    display: flex;
+    height: 50px;
+    width: 150px;
+    left: 17%;
+    border: solid rgb(79, 34, 238);;
+    background: transparent;
+    border-radius: 20px;
+}
+.D{
+    position: absolute;
+    top: 70%;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    left: 62%;
+    border: solid rgb(79, 34, 238);
+    background: transparent;
+    border-radius: 20px;
+}
+.correct{
+    outline: none;
+    background-color: rgb(21, 228, 21);
+    border: solid rgb(21, 228, 21);
+}
+.incorrect{
+    outline: none;
+    background-color: rgb(243, 57, 10);
+    border: solid rgb(243, 57, 10);
+}
+
+p{
+    margin: auto;
+    left: 0;
+}
+.qcounter{
+   position: absolute;
+   left: 42%;
+    top: 18%;
+    
+}
+.dot{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    border-radius: 50%;
+   background-color: white;
+    display:inline-block;
+}
+.score{
+    position:absolute;
+    left: 66%;
+    top: 18%;
+    width: 160px;
+   height: 20px;
+   
+
+}
+.score h1,h2{
+    color: tomato;
+    font-size: 25px;
+    display:inline;
+}
+.finalscore{
+    animation-name: final;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#developer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: .6;
+    font-family: 'Pattaya', sans-serif;
+}
+@keyframes final{
+    100%{
+      
+      position: absolute;
+      left: 40%;
+      
+      top: 40%;
+    }
+}
+.timer{
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+#time{
+    font-size: 30px;
+}
+@media  screen and (max-width:650px)
+{
+    .qcounter{
+       
+        left: 35%;
+         top: 15%;
+         
+     }
+    .dot{
+        
+        height: 10px;
+        width: 10px;
+        margin: 5px;
+       
+    }
+    .questionbox{
+       
+        width: 80%;
+        
+        height: 50%;
+    }
+  
+   .divquestion h2{
+        font-size: 15px;
+    }
+    .A,.B,.C,.D{
+         width: 100px;
+         height: 50px;
+        padding: 5px;
+    }
+    .A,.C{
+        left: 5%;
+    }
+    .B,.D{
+        left: 57%;
+    }
+    .score{
+        
+        left: 70%;
+        top: 13%;
+        width: 160px;
+       height: 20px;
+       
+    
+    }
+    .score h1,h2{
+       
+        font-size: 20px;
+        
+    }
+    .timer{
+        
+        
+        margin-right: 10px;
+    }
+    #time{
+        font-size: 20px;
+    }
+
+}
